@@ -33,7 +33,7 @@ body {
 .fade-in.slow {
 /*	-webkit-animation-duration:.2s;
     -moz-animation-duration:.2s;*/
-    animation-delay:.25s;
+    animation-delay:.4s;
 }
 
 h1 {
@@ -81,7 +81,7 @@ nav {
 
 img {
 	width: 100%;
-	opacity: 0.8;
+	opacity: 1.0;
     transition: opacity .2s ease-in-out;
     -moz-transition: opacity .2s ease-in-out;
     -webkit-transition: opacity .2s ease-in-out;
@@ -89,7 +89,7 @@ img {
 }
 
 img:hover {
-	opacity: 1.0;
+	opacity: 0.8;
     transition: opacity .2s ease-in-out;
     -moz-transition: opacity .2s ease-in-out;
     -webkit-transition: opacity .2s ease-in-out;
