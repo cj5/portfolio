@@ -25,6 +25,15 @@ body {
     animation-delay:.4s;
 }
 
+canvas {
+    position: fixed;
+    top: 0
+    left: 0;
+    /*opacity: .2;*/
+    height: 492px;
+    width: 1440px;
+}
+
 h1, li {
 	font-weight: 700;
 }
@@ -47,7 +56,6 @@ h2 {
 	position: relative;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	z-index: 999;
 }
 
 a {
