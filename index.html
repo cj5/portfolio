@@ -114,13 +114,13 @@
                 ctx.beginPath();
                 ctx.globalAlpha = .9;
                 ctx.fillStyle = '#ddd';
-                ctx.arc((.5 + this.x) | 0, (0.5 + this.y) | 0, 10, 0, TAU, false);
+                ctx.arc((.5 + this.x) | 0, (0.5 + this.y) | 0, 4, 0, TAU, false); 
                 ctx.fill();
               }
             }
 
             var balls = [];
-            for (var i = 0; i < canvas.width * canvas.height / (105*105); i++) {
+            for (var i = 0; i < canvas.width * canvas.height / (75*75); i++) {
               balls.push(new Ball(Math.random() * canvas.width, Math.random() * canvas.height));
             }
 

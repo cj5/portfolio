@@ -37,12 +37,29 @@
 		</header>
 
         <div class="container">
-            <div class="col-sm-12 contact-wrapper">
-                <h3>contact info</h3>
+            <div class="col-sm-12">
+                <h3>please contact me here</h3>
+
+                <!-- BOOTSTRAP GRID ------------------ -->
+
+                <div class="col-sm-1 contact-wrapper">
+                    <span class="contact-title">Email</span>
+                    <span class="contact-title">LinkedIn</span>
+                    <span class="contact-title">Phone</span>
+                </div>
+                <div class="col-sm-11 contact-wrapper">
                 <ul>
-                    <li><a class="contact-list" href="email">chris@chrisstack.co</a></li>
-                    <li><a class="contact-list linkedin-blue" href="https://www.linkedin.com/in/chris-stack-5ba22851">LinkedIn</a></li>
-                </ul>
+                    <li><span class="email-style"><a class="contact-list" href="mailto:chris@chrisstack.co">chris@chrisstack.co</span></a></li>
+                    <li><a class="contact-list linkedin-blue" href="https://www.linkedin.com/in/chris-stack-5ba22851">linkedin/chrisstack</a></li>
+                    <li><a class="contact-list no-hover">715.557.1886</a></li>
+                </ul>    
+                </div>
+
+                <!-- <ul>
+                    <li><span class="email-style"><a class="contact-list" href="mailto:chris@chrisstack.co"><span class="contact-title">Email</span>chris@chrisstack.co</span></a></li>
+                    
+                    <li><a class="contact-list linkedin-blue" href="https://www.linkedin.com/in/chris-stack-5ba22851"><span class="contact-title">LinkedIn</span>linkedin.com/in/chris-stack</a></li>
+                </ul> -->
             </div>
         </div>
 
@@ -83,13 +100,13 @@
                 ctx.beginPath();
                 ctx.globalAlpha = .9;
                 ctx.fillStyle = '#ddd';
-                ctx.arc((.5 + this.x) | 0, (0.5 + this.y) | 0, 10, 0, TAU, false);
+                ctx.arc((.5 + this.x) | 0, (0.5 + this.y) | 0, 4, 0, TAU, false);
                 ctx.fill();
               }
             }
 
             var balls = [];
-            for (var i = 0; i < canvas.width * canvas.height / (105*105); i++) {
+            for (var i = 0; i < canvas.width * canvas.height / (75*75); i++) {
               balls.push(new Ball(Math.random() * canvas.width, Math.random() * canvas.height));
             }
 

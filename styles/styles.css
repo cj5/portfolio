@@ -26,12 +26,12 @@ body {
 }
 
 canvas {
-    position: fixed;
+    position: absolute;
     top: 0
     left: 0;
     opacity: .4;
-    height: 492px;
-    width: 1440px;
+    height: 498px;
+    width: 1437px;
 }
 
 h1, h2, li {
@@ -58,9 +58,12 @@ h2 {
 }
 
 h3 {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 800;
     text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
 }
 
 a {
@@ -111,12 +114,25 @@ p {
 }
 
 li a:hover {
-	/*color: #CCC8CB;*/
 	color: #999999;
 	text-decoration: none;
 }
 
-a:hover {
+/*a:hover {
+    text-decoration: none;
+    color: #242324;
+}*/
+
+.no-hover:hover {
+    color: #242324;
+}
+
+a:link {
+    text-decoration: none;
+    color: #242324;
+}
+
+a:visited {
     text-decoration: none;
     color: #242324;
 }
@@ -254,7 +270,7 @@ a:hover {
 
 .resume-button {
     top: 100px;
-    text-align: center;
+    text-align: right;
 }
 
 /*BUTTON --------------------------------------*/
@@ -304,14 +320,36 @@ a:hover {
 </style>
 
 .contact-wrapper {
+    margin-top: 50px;   
+}
+
+.col-sm-12 {
     margin-top: 50px;
 }
 
+.col-sm-1 {
+    line-height: 30px;
+}
+
 .contact-list {
-    text-transform: none;
+    text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
-    line-height: 26px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.email-style {
+    text-decoration: none;
+}
+
+.contact-title {
+    margin-right: 40px;
+    color: #999999;
+    text-transform: uppercase;
 }
 
 .linkedin-blue:hover {

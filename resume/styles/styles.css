@@ -82,10 +82,28 @@ p {
 	line-height: 17px;
 }
 
-.nav-wrapper {
+/*.nav-wrapper {
     padding: 20px 0 0 50px;
     text-transform: uppercase;
     background-color: #2B2B2B;
+}*/
+
+.x-wrapper {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+img {
+    float: right;
+    margin: 40px 270px 0 0;
+    -webkit-transition: -webkit-transform .35s ease-in-out;
+    transition: transform .35s ease-in-out;
+}
+
+img:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .home {
