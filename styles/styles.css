@@ -31,7 +31,8 @@ canvas {
     left: 0;
     opacity: .4;
     height: 498px;
-    width: 1437px;
+    width: 1422px;
+    overflow: hidden;
 }
 
 h1, h2, li {
@@ -108,36 +109,21 @@ p {
 	opacity: .8;
 }
 
-.hover:hover {
-	color: #999999;
-	text-decoration: none;
-}
-
-li a:hover {
-	color: #999999;
-	text-decoration: none;
-}
-
-a .contact-list:hover {
+a.gray:hover, h1:hover {
    color: #999999;
-    text-decoration: none; 
+   text-decoration: none; 
 }
 
-/*a:hover {
-    text-decoration: none;
-    color: #242324;
-}*/
+.linkedin-blue:hover {
+    color: #1D87BE;
+}
 
 .no-hover:hover {
     color: #242324;
-}
-
-.email:link {
     text-decoration: none;
-    color: #242324;
 }
 
-.email:visited {
+.contact-list:link {
     text-decoration: none;
     color: #242324;
 }
@@ -175,85 +161,6 @@ a .contact-list:hover {
 .main-nav li {
 	display: inline;
 }
-
-/*ROTATING LINES STYLES -----------------------*/
-
-/*.line-wrapper {
-	margin-left: 700px;
-	margin-top: -905px;
-}
-
-@-webkit-keyframes rotating {
-	0%{
-    }
-    50% {
-    -webkit-transform: rotate(-2deg);
-    }
-    100% {
-    }
-}
-
-.rotating {
-    -webkit-animation: rotating 4s linear infinite;
-}
-
-.line {
-	height: 2000px;
-	width: 1px;
-	color: black;
-	display: inline;
-	float: left;
-	margin: 0 10px;
-}
-
-.one {
-	-webkit-animation: color-change 4s infinite;
-  	animation: color-change 4s infinite;
-  	transition: all 3s ease;
-  	transform: rotate(280deg);
-}
-
-.two {
-	-webkit-animation: color-change 4s infinite;
-  	animation: color-change 4s infinite;
-  	transition: all 3s ease;
-  	transform: rotate(2deg);
-}
-
-.three {
-	-webkit-animation: color-change 4s infinite;
-  	animation: color-change 4s infinite;
-  	transition: all 3s ease;
-  	transform: rotate(2deg);
-}
-
-.four {
-	-webkit-animation: color-change 4s infinite;
-  	animation: color-change 4s infinite;
-  	transition: all 5s ease;
-  	transform: rotate(2deg);
-}
-
-.five {
-	-webkit-animation: color-change 4s infinite;
-  	animation: color-change 4s infinite;
-  	transition: all 3s ease;
-  	transform: rotate(2deg);
-}
-
-@keyframes color-change {
-  	0% {
-    background-color: #CED1D0;
-  	}
-  	50% {
-    background-color: #E2E5E4;
-	}
-	100% {
-    background-color: #CED1D0;
-	}	
-} */
-
-/*ROTATING LINES STYLES -----------------------*/
 
 .about-image-wrapper {
 	padding: 0 100px;
@@ -358,18 +265,15 @@ a .contact-list:hover {
     font-size: 12px;
 }
 
-.linkedin-blue:hover {
-    color: #1D87BE;
-}
-
 .footer-wrapper {
     background-color: #363636;
     height: 85px;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     display: inline;
     position: absolute;
     width: 100%;
     text-align: center;
+    bottom: -85px;
 }
 
 .footer-wrapper li {
@@ -381,7 +285,7 @@ a .contact-list:hover {
 }
 
 .footer-font {
-    font-size: 20px;
+    font-size: 14px;
     color: white;
 }
 
