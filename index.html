@@ -127,7 +127,7 @@
             var lastTime = Date.now();
             function update() {
               var diff = Date.now() - lastTime;
-              for (var frame = 0; frame * 16.6667 < diff; frame++) {
+              for (var frame = 0; frame * 30.6667 < diff; frame++) {
                 for (var index = 0; index < balls.length; index++) {
                   balls[index].update(canvas);
                 }
