@@ -30,7 +30,7 @@ canvas {
     top: 0
     left: 0;
     opacity: .4;
-    height: 498px;
+    height: 501px;
     width: 1422px;
     overflow: hidden;
 }
@@ -44,7 +44,7 @@ h1 {
 	color: #242324; 	
 	font-size: 8px;	
 	margin: 0;
-	padding-top: 10px;
+	padding: 5px 5px 5px 0;
 	position: relative;
 	text-transform: uppercase;	
 	transition: all .2s ease-in-out;
@@ -143,7 +143,7 @@ a.gray:hover, h1:hover {
 
 .page-title {
 	display: inline-block;
-	width: 335px;
+	/*width: 335px;*/
     height: 38px;	
 }
 
@@ -229,7 +229,6 @@ a.gray:hover, h1:hover {
     opacity: 1;
     right: 0;
 }
-</style>
 
 .contact-wrapper {
     margin-top: 50px;   
